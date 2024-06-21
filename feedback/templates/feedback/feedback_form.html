@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback Form</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .star-rating {
+      direction: rtl;
+      display: inline-block;
+    }
+    .star-rating input[type="radio"] {
+      display: none;
+    }
+    .star-rating label {
+      font-size: 2rem;
+      color: #ddd;
+      cursor: pointer;
+      transition: color 0.2s;
+    }
+    .star-rating input[type="radio"]:checked ~ label,
+    .star-rating input[type="radio"]:checked ~ label ~ label {
+      color: #ffc107;
+    }
+    .star-rating input[type="radio"]:hover ~ label,
+    .star-rating input[type="radio"]:hover ~ label ~ label {
+      color: #ffc107;
+    }
+    .bg-color-blue{
+      background-color: #0F85C5; 
+    }
+  </style>
+</head>
+<body class="bg-gray-100">
+
+  <!-- Header -->
+  <header class="bg-color-blue text-white p-4">
+    <div class="container mx-auto flex justify-start items-center">
+      <a href='https://aureolepharmatech.com' target="_blank"> 
+      <img src="/static/img/logo/aureole.png" class="w-12"></a>
+      <h1 class="text-xl font-bold">Feedback Form</h1>
+      
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container mx-auto p-4 sm:p-6 md:p-8">
+    <div class="bg-white p-6 sm:p-8 rounded-lg shadow-md">
+      <h2 class="text-2xl font-bold mb-6">We'd love to hear your feedback!</h2>
+      <form action="#" method="POST" class="space-y-4">
+        
+        <div>
+          <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+          <input type="text" id="name" name="name" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+        </div>
+        <div>
+          <label for="name" class="block text-sm font-medium text-gray-700">Mobile Number</label>
+          <input type="text" id="name" name="mobile_number" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+        </div>
+        <div>
+          <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+          <input type="email" id="email" name="email_id" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+        </div>
+
+        <!-- Rating Question 1 -->
+        <div>
+          <label class="block text-sm font-medium text-gray-700">Problem resolution and Time Taken.</label>
+          <div class="mt-2 star-rating flex space-x-1">
+            <input type="radio" name="problem_resolution_time" id="service_rating_5" value="5"><label for="service_rating_5">★</label>
+            <input type="radio" name="problem_resolution_time" id="service_rating_4" value="4"><label for="service_rating_4">★</label>
+            <input type="radio" name="problem_resolution_time" id="service_rating_3" value="3"><label for="service_rating_3">★</label>
+            <input type="radio" name="problem_resolution_time" id="service_rating_2" value="2"><label for="service_rating_2">★</label>
+            <input type="radio" name="problem_resolution_time" id="service_rating_1" value="1"><label for="service_rating_1">★</label>
+          </div>
+        </div>
+
+        <!-- Rating Question 2 -->
+        <div>
+          <label class="block text-sm font-medium text-gray-700">Timely update and information from Aureole Team, about the registered case / issue / request.</label>
+          <div class="mt-2 star-rating flex space-x-1">
+            <input type="radio" name="timely_update_information" id="quality_rating_5" value="5"><label for="quality_rating_5">★</label>
+            <input type="radio" name="timely_update_information" id="quality_rating_4" value="4"><label for="quality_rating_4">★</label>
+            <input type="radio" name="timely_update_information" id="quality_rating_3" value="3"><label for="quality_rating_3">★</label>
+            <input type="radio" name="timely_update_information" id="quality_rating_2" value="2"><label for="quality_rating_2">★</label>
+            <input type="radio" name="timely_update_information" id="quality_rating_1" value="1"><label for="quality_rating_1">★</label>
+          </div>
+        </div>
+
+        <!-- Rating Question 3 -->
+        <div>
+          <label class="block text-sm font-medium text-gray-700">Technical Skill of Service Engineer / ITSS Engineer.</label>
+          <div class="mt-2 star-rating flex space-x-1">
+            <input type="radio" name="technical_skill_service_engineer" id="recommend_rating_5" value="5"><label for="recommend_rating_5">★</label>
+            <input type="radio" name="technical_skill_service_engineer" id="recommend_rating_4" value="4"><label for="recommend_rating_4">★</label>
+            <input type="radio" name="technical_skill_service_engineer" id="recommend_rating_3" value="3"><label for="recommend_rating_3">★</label>
+            <input type="radio" name="technical_skill_service_engineer" id="recommend_rating_2" value="2"><label for="recommend_rating_2">★</label>
+            <input type="radio" name="technical_skill_service_engineer" id="recommend_rating_1" value="1"><label for="recommend_rating_1">★</label>
+          </div>
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-gray-700">Communication, Attire and over all behaviour of Service Engineer / ITSS Engineer.</label>
+          <div class="mt-2 star-rating flex space-x-1">
+            <input type="radio" name="communication_attire_behavior" id="communication_attire_behavior_5" value="5"><label for="communication_attire_behavior_5">★</label>
+            <input type="radio" name="communication_attire_behavior" id="communication_attire_behavior_4" value="4"><label for="communication_attire_behavior_4">★</label>
+            <input type="radio" name="communication_attire_behavior" id="communication_attire_behavior_3" value="3"><label for="communication_attire_behavior_3">★</label>
+            <input type="radio" name="communication_attire_behavior" id="communication_attire_behavior_2" value="2"><label for="communication_attire_behavior_2">★</label>
+            <input type="radio" name="communication_attire_behavior" id="communication_attire_behavior_1" value="1"><label for="communication_attire_behavior_1">★</label>
+          </div>
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-gray-700">Response and communication from Backend Team (if applicable).</label>
+          <div class="mt-2 star-rating flex space-x-1">
+            <input type="radio" name="response_backend_team" id="response_backend_team_5" value="5"><label for="response_backend_team_5">★</label>
+            <input type="radio" name="response_backend_team" id="response_backend_team_4" value="4"><label for="response_backend_team_4">★</label>
+            <input type="radio" name="response_backend_team" id="response_backend_team_3" value="3"><label for="response_backend_team_3">★</label>
+            <input type="radio" name="response_backend_team" id="response_backend_team_2" value="2"><label for="response_backend_team_2">★</label>
+            <input type="radio" name="response_backend_team" id="response_backend_team_1" value="1"><label for="response_backend_team_1">★</label>
+          </div>
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-gray-700">Overall Experience for the service.</label>
+          <div class="mt-2 star-rating flex space-x-1">
+            <input type="radio" name="overall_experience" id="overall_experience_5" value="5"><label for="overall_experience_5">★</label>
+            <input type="radio" name="overall_experience" id="overall_experience_4" value="4"><label for="overall_experience_4">★</label>
+            <input type="radio" name="overall_experience" id="overall_experience_3" value="3"><label for="overall_experience_3">★</label>
+            <input type="radio" name="overall_experience" id="overall_experience_2" value="2"><label for="overall_experience_2">★</label>
+            <input type="radio" name="overall_experience" id="overall_experience_1" value="1"><label for="overall_experience_1">★</label>
+          </div>
+        </div>
+
+        <div>
+          <label for="suggestions" class="block text-sm font-medium text-gray-700">Message</label>
+          <textarea id="suggestions" name="suggestions" rows="2" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"></textarea>
+        </div>
+        <div>
+          <button type="submit" class="w-full bg-color-blue text-white px-4 py-2 rounded-md shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">Submit</button>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-color-blue text-white p-4 mt-6">
+    <div class="container mx-auto text-center">
+      <p>&copy; Copyright @ 2024 . Aureole Pharma Pvt. Ltd.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
