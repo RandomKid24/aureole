@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Survey</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding-top: 80px;
+            padding-bottom: 60px;
+            font-family: 'Poppins', sans-serif;
+        }
+        .rating-label {
+            margin: 0 10px;
+        }
+        .custom-radio input[type="radio"] {
+            display: none;
+        }
+        .custom-radio label {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            border-radius: 50%;
+            border: 2px solid #1a202c; /* Hollow border */
+            color: #1a202c; /* Text color */
+            text-align: center;
+            cursor: pointer;
+            margin-right: 10px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .custom-radio input[type="radio"]:checked + label {
+            background-color: #3b82f6; /* Checked background color */
+            color: white; /* Checked text color */
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            margin-bottom: 10px;
+            display: block;
+            font-family: 'Poppins', sans-serif;
+        }
+        .form-group .custom-radio {
+            display: flex;
+            align-items: center;
+        }
+        .form-group textarea,
+        .form-group input[type="text"],
+        .form-group input[type="tel"],
+        .form-group input[type="email"] {
+            margin-top: 10px;
+            padding: 10px;
+            border: 2px solid #e2e8f0;
+            border-radius: 5px;
+            width: 100%;
+            font-family: 'Poppins', sans-serif;
+        }
+        .header, .footer {
+            position: fixed;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        .header {
+            top: 0;
+            background-color: #3b82f6;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .footer {
+            bottom: 0;
+            background-color: #1a202c;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            margin-top: 20px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+        .logo {
+            width: 50px;
+            height: 50px;
+            background-color: white;
+            border-radius: 50%;
+        }
+        .form-title {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        .form-description {
+            font-size: 16px;
+            color: #4a5568;
+            margin-bottom: 20px;
+        }
+        .form-group i {
+            color: #3b82f6;
+        }
+        .form-group label {
+            font-size: 14px;
+            font-weight: 500;
+        }
+        .form-group textarea,
+        .form-group input[type="text"],
+        .form-group input[type="tel"],
+        .form-group input[type="email"] {
+            font-size: 14px;
+        }
+        .form-group button {
+            background-color: #3b82f6;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            width: 100%;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        .form-group button:hover {
+            background-color: #2563eb;
+        }
+        .link {
+            color: white;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+        .link:hover {
+            color: #cbd5e0;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Header -->
+    <div class="header">
+        <div class="header-content">
+            <div class="logo"></div>
+            <h1>Product Survey</h1>
+            <div>
+                <a href="#" class="link">About Us</a>
+                <a href="#" class="link">Contact</a>      
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="max-w-4xl mx-auto p-5 container">
+        <h2 class="form-title">Product Survey</h2>
+        <p class="form-description">Welcome to our survey! Your feedback is essential in helping us improve. Thank you for taking the time to share your valuable insights.</p>
+        <form action="#" method="POST">
+
+            
+
+            <!-- Problem Resolution and Time Taken -->
+            <div class="form-group">
+                <label><i class="fas fa-clock mr-2"></i>Problem resolution and Time Taken</label>
+                <div class="custom-radio">
+                    <!-- Radio buttons for problem resolution and time taken -->
+                    <input type="radio" id="problemResolution1" name="problemResolution" value="1">
+                    <label for="problemResolution1">1</label>
+                    <input type="radio" id="problemResolution2" name="problemResolution" value="2">
+                    <label for="problemResolution2">2</label>
+                    <input type="radio" id="problemResolution3" name="problemResolution" value="3">
+                    <label for="problemResolution3">3</label>
+                    <input type="radio" id="problemResolution4" name="problemResolution" value="4">
+                    <label for="problemResolution4">4</label>
+                    <input type="radio" id="problemResolution5" name="problemResolution" value="5">
+                    <label for="problemResolution5">5</label>
+                </div>
+            </div>
+
+            <!-- Timely Update and Information from Aureole Team -->
+            <div class="form-group">
+                <label><i class="fas fa-info-circle mr-2"></i>Timely update and information from Aureole Team, about the registered case/issue/request</label>
+                <div class="custom-radio">
+                    <!-- Radio buttons for timely update and information from Aureole Team -->
+                    <input type="radio" id="timelyUpdate1" name="timelyUpdate" value="1">
+                    <label for="timelyUpdate1">1</label>
+                    <input type="radio" id="timelyUpdate2" name="timelyUpdate" value="2">
+                    <label for="timelyUpdate2">2</label>
+                    <input type="radio" id="timelyUpdate3" name="timelyUpdate" value="3">
+                    <label for="timelyUpdate3">3</label>
+                    <input type="radio" id="timelyUpdate4" name="timelyUpdate" value="4">
+                    <label for="timelyUpdate4">4</label>
+                    <input type="radio" id="timelyUpdate5" name="timelyUpdate" value="5">
+                    <label for="timelyUpdate5">5</label>
+                </div>
+            </div>
+
+            <!-- Technical Skill of Service Engineer/ITSS Engineer -->
+            <div class="form-group">
+                <label><i class="fas fa-cogs mr-2"></i>Technical Skill of Service Engineer/ITSS Engineer</label>
+                <div class="custom-radio">
+                    <!-- Radio buttons for technical skill -->
+                    <input type="radio" id="technicalSkill1" name="technicalSkill" value="1">
+                    <label for="technicalSkill1">1</label>
+                    <input type="radio" id="technicalSkill2" name="technicalSkill" value="2">
+                    <label for="technicalSkill2">2</label>
+                    <input type="radio" id="technicalSkill3" name="technicalSkill" value="3">
+                    <label for="technicalSkill3">3</label>
+                    <input type="radio" id="technicalSkill4" name="technicalSkill" value="4">
+                    <label for="technicalSkill4">4</label>
+                    <input type="radio" id="technicalSkill5" name="technicalSkill" value="5">
+                    <label for="technicalSkill5">5</label>
+                </div>
+            </div>
+
+            <!-- Communication, Attire, and overall behavior of Service Engineer/ITSS Engineer -->
+            <div class="form-group">
+                <label><i class="fas fa-user mr-2"></i>Communication, Attire, and overall behavior of Service Engineer/ITSS Engineer</label>
+                <div class="custom-radio">
+                    <!-- Radio buttons for communication, attire, and behavior -->
+                    <input type="radio" id="communicationBehavior1" name="communicationBehavior" value="1">
+                    <label for="communicationBehavior1">1</label>
+                    <input type="radio" id="communicationBehavior2" name="communicationBehavior" value="2">
+                    <label for="communicationBehavior2">2</label>
+                    <input type="radio" id="communicationBehavior3" name="communicationBehavior" value="3">
+                    <label for="communicationBehavior3">3</label>
+                    <input type="radio" id="communicationBehavior4" name="communicationBehavior" value="4">
+                    <label for="communicationBehavior4">4</label>
+                    <input type="radio" id="communicationBehavior5" name="communicationBehavior" value="5">
+                    <label for="communicationBehavior5">5</label>
+                </div>
+            </div>
+
+            <!-- Response and communication from Backend Team (if applicable) -->
+            <div class="form-group">
+                <label><i class="fas fa-comments mr-2"></i>Response and communication from Backend Team (if applicable)</label>
+                <div class="custom-radio">
+                    <!-- Radio buttons for response and communication from backend team -->
+                    <input type="radio" id="backendResponse1" name="backendResponse" value="1">
+                    <label for="backendResponse1">1</label>
+                    <input type="radio" id="backendResponse2" name="backendResponse" value="2">
+                    <label for="backendResponse2">2</label>
+                    <input type="radio" id="backendResponse3" name="backendResponse" value="3">
+                    <label for="backendResponse3">3</label>
+                    <input type="radio" id="backendResponse4" name="backendResponse" value="4">
+                    <label for="backendResponse4">4</label>
+                    <input type="radio" id="backendResponse5" name="backendResponse" value="5">
+                    <label for="backendResponse5">5</label>
+                </div>
+            </div>
+
+            <!-- Overall Rating -->
+            <div class="form-group">
+                <label><i class="fas fa-star mr-2"></i>Overall Rating</label>
+                <div class="custom-radio">
+                     <!-- Radio buttons for overall rating -->
+                     <input type="radio" id="overallRating1" name="overallRating" value="1">
+                     <label for="overallRating1">1</label>
+                     <input type="radio" id="overallRating2" name="overallRating" value="2">
+                     <label for="overallRating2">2</label>
+                    <input type="radio" id="overallRating3" name="overallRating" value="3">
+                    <label for="overallRating3">3</label>
+                    <input type="radio" id="overallRating4" name="overallRating" value="4">
+                    <label for="overallRating4">4</label>
+                    <input type="radio" id="overallRating5" name="overallRating" value="5">
+                    <label for="overallRating5">5</label>
+                  </div>
+            </div>
+
+            <!-- Contact Details -->
+            <div class="form-group">
+                <label><i class="fas fa-address-book mr-2"></i>Your Contact Details (Optional):</label>
+                <input type="text" name="name" placeholder="Your Name">
+                <input type="email" name="email" placeholder="Your Email">
+                <input type="tel" name="phone" placeholder="Your Phone Number">
+            </div>
+
+            <!-- Suggestion Box -->
+            <div class="form-group">
+                <label><i class="fas fa-comments mr-2"></i>Suggestions or Comments</label>
+                <textarea name="suggestions" rows="5" placeholder="Enter your suggestions or comments here"></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="form-group">
+                <button type="submit">Submit Feedback</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div>&copy; 2024 . Aureole Pharma Pvt. Ltd.</div>
+        <div>Contact: <a href="mailto:support@yourcompany.com" class="link">enquiry@aureolepharmatech.com</a></div>
+        <div>Contact: <a href="phoneno" class="link">+91 86005 22240</a></div>
+    </div>
+
+</body>
+</html>
+
