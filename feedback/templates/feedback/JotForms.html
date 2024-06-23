@@ -8,11 +8,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <style>
-        body {
-            padding-top: 80px;
-            padding-bottom: 60px;
-            font-family: 'Poppins', sans-serif;
-        }
+         body {
+        padding-top: 80px;
+        padding-bottom: 60px;
+        font-family: 'Poppins', sans-serif;
+        background-image: url('https://i.pinimg.com/originals/3b/e8/08/3be8089606e61c8023290e120340e340.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
         .rating-label {
             margin: 0 10px;
         }
@@ -144,7 +147,7 @@
         .link {
             color: white;
             margin: 0 10px;
-            transition:color #cbd5e0;
+            transition: color 0.3s;
         }
         .link:hover {
             color: #cbd5e0;
@@ -165,8 +168,8 @@
             <div class="logo"></div>
             <h1>Product Survey</h1>
             <div>
-                <a href="#" class="link">About Us</a>
-                <a href="#" class="link">Contact</a>      
+                <a href="https://aureolepharmatech.com/about-us/" class="link">About Us</a>
+                <a href="https://aureolepharmatech.com/contact-us/" class="link">Contact</a>      
             </div>
         </div>
     </div>
@@ -247,7 +250,7 @@
             <div class="form-group">
                 <label><i class="fas fa-tools mr-2"></i>Technical Skill of Service Engineer/ITSS Engineer</label>
                 <div class="custom-radio">
-                    <!-- Radio buttons for technical skill of service engineer/ITSS engineer -->
+                    <!-- Radio buttons for technical skill of Service Engineer/ITSS Engineer -->
                     <div class="rating-circle">
                         <input type="radio" id="technicalSkill1" name="technicalSkill" value="1" required>
                         <label for="technicalSkill1">1</label>
@@ -276,34 +279,34 @@
                 </div>
             </div>
 
-            <!-- Communication, Attire, and Overall Behavior of Service Engineer -->
+            <!-- Communication, Attire, and Overall Behavior of Service Engineer/ITSS Engineer -->
             <div class="form-group">
-                <label><i class="fas fa-user-circle mr-2"></i>Communication, Attire, and Overall Behavior of Service Engineer</label>
+                <label><i class="fas fa-user-tie mr-2"></i>Communication, Attire, and overall behavior of Service Engineer/ITSS Engineer</label>
                 <div class="custom-radio">
-                    <!-- Radio buttons for communication, attire, and overall behavior -->
+                    <!-- Radio buttons for communication, attire, and overall behavior of Service Engineer/ITSS Engineer -->
                     <div class="rating-circle">
-                        <input type="radio" id="behavior1" name="behavior" value="1" required>
-                        <label for="behavior1">1</label>
+                        <input type="radio" id="communicationBehavior1" name="communicationBehavior" value="1" required>
+                        <label for="communicationBehavior1">1</label>
                         <div class="rating-description">Disliked</div>
                     </div>
                     <div class="rating-circle">
-                        <input type="radio" id="behavior2" name="behavior" value="2" required>
-                        <label for="behavior2">2</label>
+                        <input type="radio" id="communicationBehavior2" name="communicationBehavior" value="2" required>
+                        <label for="communicationBehavior2">2</label>
                         <div class="rating-description">Disliked</div>
                     </div>
                     <div class="rating-circle">
-                        <input type="radio" id="behavior3" name="behavior" value="3" required>
-                        <label for="behavior3">3</label>
+                        <input type="radio" id="communicationBehavior3" name="communicationBehavior" value="3" required>
+                        <label for="communicationBehavior3">3</label>
                         <div class="rating-description">Neutral</div>
                     </div>
                     <div class="rating-circle">
-                        <input type="radio" id="behavior4" name="behavior" value="4" required>
-                        <label for="behavior4">4</label>
+                        <input type="radio" id="communicationBehavior4" name="communicationBehavior" value="4" required>
+                        <label for="communicationBehavior4">4</label>
                         <div class="rating-description">Liked</div>
                     </div>
                     <div class="rating-circle">
-                        <input type="radio" id="behavior5" name="behavior" value="5" required>
-                        <label for="behavior5">5</label>
+                        <input type="radio" id="communicationBehavior5" name="communicationBehavior" value="5" required>
+                        <label for="communicationBehavior5">5</label>
                         <div class="rating-description">Liked</div>
                     </div>
                 </div>
@@ -311,32 +314,32 @@
 
             <!-- Response and Communication from Backend Team -->
             <div class="form-group">
-                <label><i class="fas fa-users mr-2"></i>Response and Communication from Backend Team (if applicable)</label>
+                <label><i class="fas fa-headset mr-2"></i>Response and communication from Backend Team (if applicable)</label>
                 <div class="custom-radio">
-                    <!-- Radio buttons for response and communication from backend team -->
+                    <!-- Radio buttons for response and communication from Backend Team -->
                     <div class="rating-circle">
-                        <input type="radio" id="backendTeam1" name="backendTeam" value="1" required>
-                        <label for="backendTeam1">1</label>
+                        <input type="radio" id="responseBackendTeam1" name="responseBackendTeam" value="1" required>
+                        <label for="responseBackendTeam1">1</label>
                         <div class="rating-description">Disliked</div>
                     </div>
                     <div class="rating-circle">
-                        <input type="radio" id="backendTeam2" name="backendTeam" value="2" required>
-                        <label for="backendTeam2">2</label>
+                        <input type="radio" id="responseBackendTeam2" name="responseBackendTeam" value="2" required>
+                        <label for="responseBackendTeam2">2</label>
                         <div class="rating-description">Disliked</div>
                     </div>
                     <div class="rating-circle">
-                        <input type="radio" id="backendTeam3" name="backendTeam" value="3" required>
-                        <label for="backendTeam3">3</label>
+                        <input type="radio" id="responseBackendTeam3" name="responseBackendTeam" value="3" required>
+                        <label for="responseBackendTeam3">3</label>
                         <div class="rating-description">Neutral</div>
                     </div>
                     <div class="rating-circle">
-                        <input type="radio" id="backendTeam4" name="backendTeam" value="4" required>
-                        <label for="backendTeam4">4</label>
+                        <input type="radio" id="responseBackendTeam4" name="responseBackendTeam" value="4" required>
+                        <label for="responseBackendTeam4">4</label>
                         <div class="rating-description">Liked</div>
                     </div>
                     <div class="rating-circle">
-                        <input type="radio" id="backendTeam5" name="backendTeam" value="5" required>
-                        <label for="backendTeam5">5</label>
+                        <input type="radio" id="responseBackendTeam5" name="responseBackendTeam" value="5" required>
+                        <label for="responseBackendTeam5">5</label>
                         <div class="rating-description">Liked</div>
                     </div>
                 </div>
@@ -344,9 +347,9 @@
 
             <!-- Overall Experience for the Service -->
             <div class="form-group">
-                <label><i class="fas fa-star mr-2"></i>Overall Experience for the Service</label>
+                <label><i class="fas fa-star mr-2"></i>Overall Experience for the service</label>
                 <div class="custom-radio">
-                    <!-- Radio buttons for overall experience -->
+                    <!-- Radio buttons for overall experience for the service -->
                     <div class="rating-circle">
                         <input type="radio" id="overallExperience1" name="overallExperience" value="1" required>
                         <label for="overallExperience1">1</label>
@@ -375,30 +378,36 @@
                 </div>
             </div>
 
-            <!-- Additional Comments -->
+            <!-- Feedback and Suggestions -->
             <div class="form-group">
-                <label><i class="fas fa-comment mr-2"></i>Additional Comments</label>
-                <textarea name="comments" rows="4" placeholder="Your comments..." required></textarea>
+                <label for="feedback"><i class="fas fa-comments mr-2"></i>Feedback and Suggestions</label>
+                <textarea id="feedback" name="feedback" rows="4" placeholder="Please provide your feedback and suggestions here..."></textarea>
             </div>
 
             <!-- Contact Information -->
             <div class="form-group">
-                <label><i class="fas fa-envelope mr-2"></i>Contact Information</label>
-                <input type="text" name="name" placeholder="Your name" required>
-                <input type="tel" name="phone" placeholder="Your phone number" required>
-                <input type="email" name="email" placeholder="Your email address" required>
+                <label for="name"><i class="fas fa-user mr-2"></i>Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+                <label for="phone"><i class="fas fa-phone-alt mr-2"></i>Phone</label>
+                <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+            </div>
+            <div class="form-group">
+                <label for="email"><i class="fas fa-envelope mr-2"></i>Email</label>
+                <input type="email" id="email" name="email" placeholder="Your Email Address" required>
             </div>
 
             <!-- Submit Button -->
             <div class="form-group">
-                <button type="submit">Submit</button>
+                <button type="submit">Submit Feedback</button>
             </div>
         </form>
     </div>
 
     <!-- Footer -->
     <div class="footer">
-        <div>&copy; 2024 Aureole Technologies. All rights reserved.</div>
+        <p>&copy; 2024 Aureole Corporation. All rights reserved.</p>
     </div>
 
 </body>
