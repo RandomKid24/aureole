@@ -158,6 +158,11 @@
             text-align: center;
             margin-top: -10px;
         }
+        .rating-circle.disabled label {
+            background-color: #d1d5db;
+            color: #6b7280;
+            cursor: default; /* Prevent cursor change */
+        }
     </style>
 </head>
 <body class="bg-gray-100">
@@ -409,6 +414,28 @@
     <div class="footer">
         <p>&copy; 2024 Aureole Corporation. All rights reserved.</p>
     </div>
+
+     <!-- JavaScript to handle gray-out behavior -->
+     <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const ratingCircles = document.querySelectorAll('.rating-circle input[type="radio"]');
+            ratingCircles.forEach(radio => {
+                radio.addEventListener('change', function () {
+                    const checkedCircle = this.closest('.rating-circle');
+                    const allCircles = checkedCircle.parentElement.querySelectorAll('.rating-circle');
+                    allCircles.forEach(circle => {
+                        circle.classList.remove('disabled');
+                    });
+                    allCircles.forEach(circle => {
+                        if (circle !== checkedCircle) {
+                            circle.classList.add('disabled');
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+
 
 </body>
 </html>
