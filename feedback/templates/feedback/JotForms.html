@@ -10,7 +10,6 @@
     <style>
          body {
         padding-top: 80px;
-        padding-bottom: 60px;
         font-family: 'Poppins', sans-serif;
         background-image: url('https://aureolepharmatech.com/wp-content/uploads/2023/08/bg-1.jpg');
         background-size: cover;
@@ -68,7 +67,7 @@
             width: 100%;
             font-family: 'Poppins', sans-serif;
         }
-        .header, .footer {
+        .header {
             position: fixed;
             left: 0;
             width: 100%;
@@ -93,7 +92,6 @@
             bottom: 0;
             background-color: #1a202c;
             color: white;
-            padding: 10px 0;
             text-align: center;
             font-family: 'Times New Roman', Times, serif;
         }
@@ -105,12 +103,7 @@
             box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
             border-color: #3b82f6;
         }
-        .logo {
-            width: 50px;
-            height: 50px;
-            background-color: white;
-            border-radius: 50%;
-        }
+       
         .form-title {
             font-size: 24px;
             font-weight: 600;
@@ -170,20 +163,28 @@
 <body class="bg-gray-100">
 
     <!-- Header -->
-    <div class="header">
-        <div class="header-content">
-            <div class="logo"></div>
-            <h1>Product Survey</h1>
-            <div>
-                <a href="https://aureolepharmatech.com/about-us/" class="link">About Us</a>
-                <a href="https://aureolepharmatech.com/contact-us/" class="link">Contact</a>      
-            </div>
+    <!-- Header -->
+    <!-- Header -->
+<div class="header bg-gray-800 p-4">
+    <div class="header-content flex items-center justify-between">
+        <div class="logo">
+            <a href="https://aureolepharmatech.com">
+                <img class="w-2/4" src="https://aureolepharmatech.com/wp-content/uploads/elementor/thumbs/WhatsApp_Image_2023-09-25_at_1.26.49_PM-removebg-preview-qea802enzp4yro7uvfmmpmlyj78wgtqissn1rmfary.png" alt="Aureole Pharmatech Logo">
+            </a>
+        </div>
+        <h1 class="text-white text-2xl font-bold">Feedback</h1>
+        <div>
+            <a href="https://aureolepharmatech.com/about-us/" class="link text-blue-400 mx-2">About Us</a>
+            <a href="https://aureolepharmatech.com/contact-us/" class="link text-blue-400 mx-2">Contact</a>
         </div>
     </div>
+</div>
+
+
 
     <!-- Main Content -->
-    <div class="max-w-4xl mx-auto p-5 container">
-        <h2 class="form-title">Product Survey</h2>
+    <div class="max-w-4xl mx-auto p-5 container md:mb-24 mb-24">
+        <h2 class="form-title">Feedback</h2>
         <p class="form-description">Dear Valued Customer,
 
 Thank you for choosing Aureole Pharma Pvt Ltd. Your feedback is important to us as we
@@ -418,9 +419,8 @@ Thank you for choosing Aureole Pharma Pvt Ltd. Your feedback is important to us 
     </div>
 
     <!-- Footer -->
-    <!-- Footer -->
-    <div class="footer bg-gray-800 text-lg">
-        <div class="mx-auto flex justify-center space-x-4 py-2">
+    <div class="footer bg-gray-800 text-lg md:fixed w-full">
+        <div class="mx-auto flex flex-col lg:flex-row justify-center lg:space-x-4 py-2">
             <p class="text-white">
                 <i class="fas fa-envelope text-blue-400"></i>
                 <a href="mailto:enquiry@aureolepharmatech.com" class="link text-blue-400">enquiry@aureolepharmatech.com</a>
@@ -461,3 +461,6 @@ Thank you for choosing Aureole Pharma Pvt Ltd. Your feedback is important to us 
 
 </body>
 </html>
+
+
+
