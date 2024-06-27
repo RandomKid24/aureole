@@ -14,7 +14,7 @@
         background-image: url('https://aureolepharmatech.com/wp-content/uploads/2023/08/bg-1.jpg');
         background-size: cover;
         background-repeat: no-repeat;
-    }
+        }
         .rating-label {
             margin: 0 10px;
         }
@@ -72,11 +72,12 @@
             left: 0;
             width: 100%;
             z-index: 1000;
+            background-color: rgb(248, 248, 248);
+            -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
         }
         .header {
             top: 0;
-            background-color: #3b82f6;
-            color: white;
             padding: 10px 0;
             text-align: center;
         }
@@ -90,7 +91,7 @@
         }
         .footer {
             bottom: 0;
-            background-color: #1a202c;
+            background-color: #1e91b9;
             color: white;
             text-align: center;
             font-family: 'Times New Roman', Times, serif;
@@ -163,19 +164,17 @@
 <body class="bg-gray-100">
 
     <!-- Header -->
-    <!-- Header -->
-    <!-- Header -->
-<div class="header bg-gray-800 p-4">
-    <div class="header-content flex items-center justify-between">
+<div class="header  p-4 shadow-xl backdrop-blur-sm">
+    <div class="header-content flex items-center justify-between ">
         <div class="logo">
             <a href="https://aureolepharmatech.com">
                 <img class="w-2/4" src="https://aureolepharmatech.com/wp-content/uploads/elementor/thumbs/WhatsApp_Image_2023-09-25_at_1.26.49_PM-removebg-preview-qea802enzp4yro7uvfmmpmlyj78wgtqissn1rmfary.png" alt="Aureole Pharmatech Logo">
             </a>
         </div>
-        <h1 class="text-white text-2xl font-bold">Feedback</h1>
-        <div>
-            <a href="https://aureolepharmatech.com/about-us/" class="link text-blue-400 mx-2">About Us</a>
-            <a href="https://aureolepharmatech.com/contact-us/" class="link text-blue-400 mx-2">Contact</a>
+        <h1 class="text-blue-400 text-2xl font-bold">Feedback</h1>
+        <div >
+            <a href="https://aureolepharmatech.com/about-us/" class="text-blue-500 mx-2 ">About Us</a>
+            <a href="https://aureolepharmatech.com/contact-us/" class=" text-blue-500 mx-2">Contact</a>
         </div>
     </div>
 </div>
@@ -185,12 +184,10 @@
     <!-- Main Content -->
     <div class="max-w-4xl mx-auto p-5 container md:mb-24 mb-24">
         <h2 class="form-title">Feedback</h2>
-        <p class="form-description">Dear Valued Customer,
-
-Thank you for choosing Aureole Pharma Pvt Ltd. Your feedback is important to us as we
-            continually strive to enhance our products and services Please take a moment to share your
-            thoughts by completing this brief feedback form. Your input is invaluable in helping us meet and
-            exceed your expectations.</p>
+        <p class="form-description">Dear Valued Customer,<br>
+        Thank you for choosing Aureole Pharma Pvt Ltd. Your feedback is important to us as we
+        continually strive to enhance our products and services Please take a moment to share your
+        thoughts by completing this brief feedback form. Your input is invaluable in helping us meet andexceed your expectations.</p>
         <form action="#" method="POST">
 
             <!-- Problem Resolution and Time Taken -->
